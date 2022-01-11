@@ -5,8 +5,8 @@ var score =0;
 var userName = readlineSync.question("what is your Name?");
 console.log(chalk.magenta("welcome!  " + userName + "   to DO YOU KNOW MARIYA?"));
 
-
-function play(question,answer)
+// converting function to Es6  function play => const play=()=>
+const play=(question,answer)=>
 {
   var userAnswer = readlineSync.question(question);
   if(userAnswer===answer)
